@@ -1,5 +1,8 @@
 import Head from 'next/head'
-import Navbar from './components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import Gretting from '../components/Grettings/Gretting'
+import Navbar from '../components/Navbar/Navbar'
+import Skills from '../components/Skills/Skills'
 
 
 
@@ -12,6 +15,10 @@ export default function Home() {
         <link rel="icon" href="/my.ico" />
       </Head>
       <Navbar/>
+      <Gretting/>
+      <Skills/>
+    
+      <Footer/>
     </div>
   )
 }

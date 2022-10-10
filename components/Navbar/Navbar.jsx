@@ -8,6 +8,9 @@ import { useTheme } from "next-themes";
 import Sidedrawer from "./Sidedrawer";
 import Fade from "react-reveal/Fade";
 
+
+
+
 function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme("dark");
   const [toggle, setToggle] = useState(false);
@@ -59,15 +62,17 @@ function Navbar() {
     }
   };
 
+
+
   return (
     <div className="p-3" >
       <Fade top duration={500} distance="20px">
         <nav className="flex justify-between px-4 mx-auto">
-          <div className="block">
+          <div className="flex  ml-3">
             <Image
-              width="70"
-              height="70"
-              className="w-10 h-10 rounded-full"
+              width="40%"
+              height="40%"
+               className=" rounded-full"
               src="/../public/assets/myphoto.jpg"
               alt=""
             />
@@ -78,8 +83,8 @@ function Navbar() {
           </div>
           <div>
             <ul className="hidden  md:flex space-x-6 items-center">
-              <Link href="#">
-                <li className="nav-item">Home</li>
+              <Link href='3'>
+                <li className="nav-item">About Me</li>
               </Link>
 
               <Link href="#">
@@ -91,11 +96,12 @@ function Navbar() {
               </Link>
 
               <Link href="#">
-                <li className="nav-item">Contact</li>
+                <li className="nav-item">Contact me</li>
               </Link>
               <Link href="#">
                 <li className="ml-10  ">{renderThemChanger()}</li>
               </Link>
+                 
             </ul>
             <div className="md:hidden ">
             <Button onClick={()=>handelToggle()}>
