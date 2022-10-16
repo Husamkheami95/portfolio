@@ -1,17 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Zoom from "react-reveal/Zoom";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {AiOutlineMenu } from "react-icons/ai";
 import Button from "../utility/Button";
 import { useTheme } from "next-themes";
 import Sidedrawer from "./Sidedrawer";
 import Fade from "react-reveal/Fade";
 
-
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { useEffect } from "react";
+import LocaleSwitcher from "./locale-switcher";
 
 
 function Navbar() {
+
+  const router = useRouter();
+
+  const { t } = useTranslation("");
+
+  useEffect(() => {
+    let dir = router.locale == "ar" ? "rtl" : "ltr";
+    let lang = router.locale == "ar" ? "ar" : "en";
+    document.querySelector("html").setAttribute("dir", dir);
+    document.querySelector("html").setAttribute("lang", lang);
+  }, [router.locale]);
+
+
+
   const { systemTheme, theme, setTheme } = useTheme("dark");
   const [toggle, setToggle] = useState(false);
 
@@ -23,7 +39,7 @@ function Navbar() {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       return (
-        <Button className="bg-grey-300" onClick={() => setTheme("light")}>
+        <Button  onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -42,7 +58,7 @@ function Navbar() {
       );
     } else {
       return (
-        <Button className="bg-grey-300" onClick={() => setTheme("dark")}>
+        <Button onClick={() => setTheme("dark")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -76,33 +92,34 @@ function Navbar() {
               src="/../public/assets/myphoto.jpg"
               alt=""
             />
-            <div className="font-medium ml-2">
-              <div>Husam Kheami</div>
-              <div className="text-sm ">Software Eng.</div>
+            <div className="font-medium ml-2 ">
+              <div>{t("home.myname")}</div>
+              <div className="text-sm ">{t("home.mydescription")}</div>
             </div>
           </div>
           <div>
             <ul className="hidden  md:flex space-x-6 items-center">
-              <Link href='3'>
-                <li className="nav-item">About Me</li>
+              <Link href='/AboutMe'>
+                <li className="nav-item">{t('nav.aboutme')}</li>
+              </Link>
+           
+              <Link href="/Education">
+                <li className="nav-item">{t('nav.education')}</li>
               </Link>
 
-              <Link href="#">
-                <li className="nav-item">Education</li>
+              <Link href="/Experience">
+                <li className="nav-item">{t('nav.experience')}</li>
               </Link>
 
-              <Link href="#">
-                <li className="nav-item">Experience</li>
-              </Link>
-
-              <Link href="#">
-                <li className="nav-item">Contact me</li>
+              <Link href="/ContactMe">
+                <li className="nav-item">{t('nav.contactme')}</li>
               </Link>
               <Link href="#">
                 <li className="ml-10  ">{renderThemChanger()}</li>
               </Link>
-                 
+                 <Button><LocaleSwitcher/></Button>
             </ul>
+            
             <div className="md:hidden ">
             <Button onClick={()=>handelToggle()}>
                 <div>
@@ -115,7 +132,7 @@ function Navbar() {
      
         
             <div className="md:hidden mt-5">
-            {toggle ? <Sidedrawer rendertheme={renderThemChanger()} /> : null}
+            {toggle ? <Sidedrawer langswithch={<LocaleSwitcher/>} rendertheme={renderThemChanger()} /> : null}
             </div>
             
 

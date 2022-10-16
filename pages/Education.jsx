@@ -1,0 +1,83 @@
+import React, { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import Card from "../components/utility/Card";
+import Link from "next/link";
+
+export default function Education() {
+  const { t } = useTranslation("");
+  // console.log(myVar==='ar')
+
+  return (
+    <div>
+      <Navbar />
+      <div className="h-screen flex justify-around mt-20 items-center">
+        <div className="sh">
+          <Image src="/../public/assets/edu.jpg" width="500" height="500" />
+        </div>
+
+        <div className="shadow-red-900 ">
+          <div className="text-3xl mb-4">{t("education.first")}</div>
+
+          <div className="m-3">
+            <Link href="https://codeforces.com/profile/husam_kh95">
+              <Image
+                width="50"
+                height="50"
+                src={`/../public/assets/icons8-codeforces.png`}
+                className="cursor-pointer"
+              />
+            </Link>
+            <p className="font-bold ">codeforcers</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-screen flex justify-around mt-20 items-center text-4xl mb-4">
+        Degrees Received
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <Image src="/../public/assets/certificate.jpg" width="700" height="500" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div>
+        <div className="flex justify-center mt-20 text-4xl mb-4">Certifications</div>
+
+        <div className="grid md:grid-cols-3 m-4 gap-6 mt-20">
+          <Card urlImage="icons8-google-96.png" />
+          <Card urlImage="icons8-coursera.png" />
+          <Card urlImage="icons8-coursera.png" />
+          <Card urlImage="icons8-google-96.png" />
+          <Card urlImage="icons8-coursera.png" />
+          <Card urlImage="icons8-coursera.png" />
+          <Card urlImage="icons8-google-96.png" />
+          <Card urlImage="icons8-coursera.png" />
+          <Card urlImage="icons8-coursera.png" />
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+}
+
+export async function getStaticProps({ locale }) {
+  // myVar=locale
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}

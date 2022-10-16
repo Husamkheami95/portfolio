@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'next-themes'
 import { useEffect } from 'react';
 import '../styles/globals.css'
-
+import { appWithTranslation } from "next-i18next";
 
 
 function MyApp({ Component, pageProps }) {
@@ -22,4 +22,6 @@ function MyApp({ Component, pageProps }) {
   
 }
 
-export default MyApp;
+
+
+export default  appWithTranslation(MyApp);

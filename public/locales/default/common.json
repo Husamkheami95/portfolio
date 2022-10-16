@@ -1,0 +1,30 @@
+{
+  "home": {
+    "myname": "Hussam Kheami",
+    "myfname": "Hussam",
+    "mydescription":"Software Eng.",
+    "gretting": "Hi, I'm ",
+    "doning":"What I Do?",
+    "front":"Front END Dev",
+    "backend":"Back END Dev",
+    "mobile ":"Mobile Dev",
+    "deploy":"Cloud_Infra & Deploynemt"
+  },
+
+  "nav":{
+   "aboutme": "ABOUT ME",
+   "experience":"EXPERIENCE",
+   "education":"EDUCATION",
+   "contactme":"CONTACT ME"
+   
+  },
+  "education":{
+    "first":"Basic Qualification and Certifications"
+  },
+  "aboutme":{
+    "cv":"my resume"
+  },
+  "contact":{
+    "account":"My accounts"
+  }
+}

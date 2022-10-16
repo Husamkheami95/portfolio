@@ -1,28 +1,40 @@
 import Link from "next/link";
 import React from "react";
-import { Slide,LightSpeed } from "react-reveal";
+import {  LightSpeed   } from "react-reveal";
+import Button from "../utility/Button";
+import { useTranslation } from "next-i18next";
 
-function Sidedrawer({rendertheme}) {
+function Sidedrawer({rendertheme,langswithch}) {
+  
+  const { t } = useTranslation("");
+  
   return (
     <div>
         
-        <LightSpeed top >
+        <LightSpeed   top>
         <ul className="block" >
-        
+        <div className="flex gap-6 ">
+
         <Link href="#">
           <li >{rendertheme}</li>
         </Link>
-          <Link href="#">
-            <li className="sidedraw-item">Home</li>
+        <Link href="#">
+          <Button>{langswithch}</Button>
+        </Link>
+       
+        </div>
+       
+          <Link href='/AboutMe'>
+            <li className="sidedraw-item">{t('nav.aboutme')}</li>
           </Link>
-          <Link href="#">
-            <li className="sidedraw-item">Education</li>
+          <Link href="/Education">
+            <li className="sidedraw-item">{t('nav.education')}</li>
           </Link>
-          <Link href="#">
-            <li className="sidedraw-item">Experience</li>
+          <Link href="/Experience">
+            <li className="sidedraw-item">{t('nav.experience')}</li>
           </Link>
-          <Link href="#">
-            <li className="sidedraw-item">Contact</li>
+          <Link href="/ContactMe">
+            <li className="sidedraw-item">{t('nav.contactme')}</li>
           </Link>
         </ul>
         </LightSpeed>
