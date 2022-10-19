@@ -2,31 +2,46 @@
   "home": {
     "myname": "Hussam Kheami",
     "myfname": "Hussam",
-    "mydescription":"Software Eng.",
+    "mydescription": "Software Eng.",
     "gretting": "Hi, I'm ",
-    "doning":"What I Do?",
-    "front":"Front END Dev",
-    "backend":"Back END Dev",
-    "mobile ":"Mobile Dev",
-    "deploy":"Cloud_Infra & Deploynemt"
+    "doning": "What I Do?",
+    "front": "Front END Dev",
+    "backend": "Back END Dev",
+    "mobile ": "Mobile Dev",
+    "deploy": "Cloud_Infra & Deploynemt",
+    "descreibe":"around 2+ years of experience in software development (SDLC),using MERN stack ,microservice design pattern,oop,    agile methodologies workflow and testing of high availability and scalable web and mobile application",
+    "fullstack":"Full stack developer"
 
-
-  
   },
-    "nav":{
-     "aboutme": "ABOUT ME",
-     "experience":"EXPERIENCE",
-     "education":"EDUCATION",
-     "contactme":"CONTACT ME"
-     
-    },
-    "education":{
-      "first":"Basic Qualification and Certifications"
-    },
-    "aboutme":{
-      "cv":"my resume"
-    },
-    "contact":{
-      "account":"My accounts"
-    }
+
+  "descripe":{
+    "frontdescribe1":"Collaborate with UX team to create the best UI",
+    "frontdescribe2":"Develop SPA user interface using a variety popular JavaScript tools and framworks such as React.js,Redux,Tailwind,MUI",
+    "backenddescribe1":"Create and integrate REST APIs using Express.js ,GraphQl, and( Sql & NoSql)",
+    "backenddescribe2":"Debugging and write reusable unit test cases using (jest ،mocha,enzyme) ,to ensure quality control and bug identification",
+    "mobiledescribe1":"Developed and maintained several android apps using Restful APIs",
+    "mobiledescribe2":"collaborated with marketing ,UI designers,and other developers to produce cutting edge apps",
+    "deploydescribe1":"Dealing with BaaS such as Firebase",
+    "deploydescribe2":"developing, shipping, and running applications using Docker."
+  },
+
+  "nav": {
+    "aboutme": "ABOUT ME",
+    "experience": "EXPERIENCE",
+    "education": "EDUCATION",
+    "contactme": "CONTACT ME"
+  },
+  "education": {
+    "first": "Basic Qualification and Certifications",
+    "bacalors":"Bachelor's degree, Computer Software Engineering",
+    "baclorsdescribe":"Aug 2022 Damascus University",
+    "degree":"Degrees Received",
+    "digital":"Digital Certifications"
+  },
+  "aboutme": {
+    "cv": "my resume"
+  },
+  "contact": {
+    "account": "My accounts"
   }
+}
