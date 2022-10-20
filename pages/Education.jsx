@@ -13,7 +13,7 @@ export default function Education() {
 
   return (
     <div>
- 
+      <Navbar />
       <div className="h-screen md:flex justify-around mt-20 m-4 items-center">
     
 
