@@ -5,11 +5,15 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n,
-
   images: {
-   
-    path: `${basePath}/_next/image`,
-  }
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
+ 
 }
 
 
