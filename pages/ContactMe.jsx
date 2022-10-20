@@ -16,7 +16,7 @@ export default function ContactMe() {
       <div className="h-screen md:flex justify-around m-7  items-center">
         <div className="mt-20">
           <Image
-            src="/../public/assets/contact_me.jpg"
+            src="/contact_me.jpg"
             width="400"
             height="600"
           />

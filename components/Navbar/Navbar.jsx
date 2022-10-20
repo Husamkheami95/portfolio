@@ -89,7 +89,7 @@ function Navbar() {
               width="40%"
               height="40%"
                className=" rounded-full"
-              src="/../public/assets/myphoto.jpg"
+              src="/myphoto.jpg"
               alt=""
             />
             <div className="font-medium ml-2 ">

@@ -4,7 +4,7 @@ import Image from "next/image";
 const image = (title, name) => {
   return (
     <div>
-      <Image width="50" height="50" src={`/../public/assets/${name}`} />
+      <Image width="50" height="50" src={`/${name}`} />
       <p className="font-bold ">{title}</p>
     </div>
   );

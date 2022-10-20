@@ -11,7 +11,7 @@ export default function Card({urlImage,title,href}) {
             
             <Image
              
-              src={`/../public/assets/${urlImage}`}
+              src={`/${urlImage}`}
               alt="product image"
               height='94'
               width='94'
