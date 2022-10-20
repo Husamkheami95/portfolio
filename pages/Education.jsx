@@ -25,7 +25,7 @@ export default function Education() {
               <Image
                 width="50"
                 height="50"
-                src={`/../public/assets/icons8-codeforces.png`}
+                src={`/icons8-codeforces.png`}
                 className="cursor-pointer"
               />
             </Link>
