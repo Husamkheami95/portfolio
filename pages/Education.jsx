@@ -33,7 +33,7 @@ export default function Education() {
           </div>
         </div>
         <div className="sh">
-          <Image src="/../public/assets/edu.jpg" width="500" height="500" />
+          <Image src="/edu.jpg" width="500" height="500" />
         </div>
 
       </div>

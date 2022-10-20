@@ -5,7 +5,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n,
-
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.vercel.com',
+        port: '',
+        pathname: '/image/upload/**',
+      },
+    ],
+  },
  
 }
 
