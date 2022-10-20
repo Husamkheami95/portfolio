@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/ipx": "^1.3.1",
+    "netlify-plugin-ipx": "^0.0.1",
     "next": "12.3.1",
     "next-i18next": "^12.1.0",
     "next-themes": "^0.2.1",
