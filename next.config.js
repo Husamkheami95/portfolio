@@ -12,8 +12,10 @@ const nextConfig = {
         hostname: 'assets.vercel.com',
         port: '',
         pathname: '/image/upload/**',
+        minimumCacheTTL: 3153600
       },
     ],
+  
   },
  
 }

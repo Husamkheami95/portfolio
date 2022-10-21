@@ -19,13 +19,13 @@ function Skills() {
       </h1>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-row-2 container mx-auto">
-        <Fade right duration={2000}>
+        <Fade left duration={2000}>
           <div className="md:mr-20">
             <FrontEndDevelopment />
           </div>
         </Fade>
          
-        <Fade left duration={2000}>
+        <Fade right duration={2000}>
           <div>
             <h1 className="text-4xl mb-4">{t("home.front")}</h1>
             <div className="ml-5">
@@ -56,13 +56,13 @@ function Skills() {
       </div>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-rows-2  container mx-auto">
-        <Fade left duration={2000}>
+        <Fade right duration={2000}>
           <div className="md:mr-20">
             <MobileDevelopment />
           </div>
         </Fade>
 
-        <Fade right duration={2000}>
+        <Fade left duration={2000}>
           <div className="md:mr-20">
             <h1 className="text-4xl mb-4 ">{t("home.mobile")}</h1>
             <div>
@@ -75,14 +75,14 @@ function Skills() {
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-rows-2  container mx-auto">
         <div className="order-2 ml-10">
-          <Fade left duration={2000}>
+          <Fade right duration={2000}>
             <div className="mr-5 md:mr-20">
               <Cloud_Infra_Architecture />
             </div>
           </Fade>
         </div>
 
-        <Fade right duration={2000}>
+        <Fade left duration={2000}>
           <div>
             <h1 className="text-4xl mb-4  order-1">{t("home.deploy")}</h1>
             <div>
