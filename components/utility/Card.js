@@ -18,9 +18,9 @@ export default function Card({urlImage,title,href}) {
               placeholder='ss'
             />
           </a>
-          <div class="px-5 pb-5">
+          <div className="px-5 pb-5">
             <a href={`${href}`}>
-              <h5 class="flex justify-center  text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="flex justify-center  text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
               {title}
               </h5>
             </a>

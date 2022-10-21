@@ -1,8 +1,4 @@
 import Head from 'next/head'
-import Footer from '../components/Footer/Footer'
-import Gretting from '../components/Grettings/Gretting'
-import Navbar from '../components/Navbar/Navbar'
-import Skills from '../components/Skills/Skills'
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import AboutMe from './AboutMe'

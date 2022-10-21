@@ -26,23 +26,23 @@ export default function ContactMe() {
           <div className="flex justify-center mt-10 ">
             <a href="https://drive.google.com/file/d/1j_7-RcJIJv2B7-juNXcFDAnMwfWcCRWO/view?usp=sharing" download
               type="button"
-              class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
               {t("aboutme.cv")}
             </a>
           </div>
 
-          <div class=" h-64 flex items-center justify-center">
-            <div class="container max-w-screen-lg mx-auto">
+          <div className=" h-64 flex items-center justify-center">
+            <div className="container max-w-screen-lg mx-auto">
               <div>
-                <h2 class="text-4xl font-semibold text-center mb-6 ">
+                <h2 className="text-4xl font-semibold text-center mb-6 ">
                 {t("contact.account")}
                 </h2>
 
-                <div class="flex flex-wrap justify-center gap-2">
-                  <a href="https://www.facebook.com/kheami" class="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                <div className="flex flex-wrap justify-center gap-2">
+                  <a href="https://www.facebook.com/kheami" className="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                     <svg
-                      class="w-5 h-5 fill-current"
+                      className="w-5 h-5 fill-current"
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -51,9 +51,9 @@ export default function ContactMe() {
                     </svg>
                   </a>
 
-                  <a href="https://www.linkedin.com/in/hussam-kheami" class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                  <a href="https://www.linkedin.com/in/hussam-kheami" className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                     <svg
-                      class="w-5 h-5 fill-current"
+                      className="w-5 h-5 fill-current"
                       role="img"
                       viewBox="0 0 256 256"
                       xmlns="http://www.w3.org/2000/svg"
@@ -64,13 +64,13 @@ export default function ContactMe() {
                     </svg>
                   </a>
 
-                  <a href="https://github.com/Husamkheami95" class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                  <a href="https://github.com/Husamkheami95" className="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                       aria-hidden="true"
                       role="img"
-                      class="w-5"
+                      className="w-5"
                       preserveAspectRatio="xMidYMid meet"
                       viewBox="0 0 24 24"
                     >
@@ -85,13 +85,13 @@ export default function ContactMe() {
                     </svg>
                   </a>
 
-                  <a href="mailto:mh.hussam.khyami@gmail.com" class="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                  <a href="mailto:mh.hussam.khyami@gmail.com" className="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                       aria-hidden="true"
                       role="img"
-                      class="w-5"
+                      className="w-5"
                       preserveAspectRatio="xMidYMid meet"
                       viewBox="0 0 24 24"
                     >

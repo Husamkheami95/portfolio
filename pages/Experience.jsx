@@ -14,11 +14,11 @@ export default function Experience() {
       <div className="flex justify-center text-3xl mt-20 mb-20 ml-5 mr-5">Experience Work</div>
       <div className="space-y-10">
         
-      <div class=" m-auto  relative bg-white py-6 px-6 rounded-3xl w-1/2 my-4 shadow-xl">
-          <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-green-500 left-4 -top-6">
+      <div className=" m-auto  relative bg-white py-6 px-6 rounded-3xl w-1/2 my-4 shadow-xl">
+          <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-green-500 left-4 -top-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -31,12 +31,12 @@ export default function Experience() {
               />
             </svg>
           </div>
-          <div class="mt-8">
-            <p class="text-xl font-semibold text-black my-2">Full-stack Developer</p>
-            <div class="flex space-x-2 text-black text-sm">
+          <div className="mt-8">
+            <p className="text-xl font-semibold text-black my-2">Full-stack Developer</p>
+            <div className="flex space-x-2 text-black text-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -56,10 +56,10 @@ export default function Experience() {
               </svg>
               <p>Tatweer LLC </p>
             </div>
-            <div class="flex space-x-2 text-black text-sm my-3">
+            <div className="flex space-x-2 text-black text-sm my-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -73,14 +73,14 @@ export default function Experience() {
               </svg>
               <p> Full-time [ 01/2021 – 04/2022 ] </p>
             </div>
-            <div class="border-t-2 "></div>
+            <div className="border-t-2 "></div>
           </div>
         </div>
-        <div class="m-auto relative bg-white py-6 px-6 rounded-3xl w-1/2  my-4 shadow-xl">
-          <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 left-4 -top-6">
+        <div className="m-auto relative bg-white py-6 px-6 rounded-3xl w-1/2  my-4 shadow-xl">
+          <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 left-4 -top-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -93,12 +93,12 @@ export default function Experience() {
               />
             </svg>
           </div>
-          <div class="mt-8">
-            <p class="text-xl font-semibold text-black my-2">Android Developer</p>
-            <div class="flex space-x-2 text-black text-sm">
+          <div className="mt-8">
+            <p className="text-xl font-semibold text-black my-2">Android Developer</p>
+            <div className="flex space-x-2 text-black text-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -118,10 +118,10 @@ export default function Experience() {
               </svg>
               <p>Z group mobile</p>
             </div>
-            <div class="flex space-x-2 text-black text-sm my-3">
+            <div className="flex space-x-2 text-black text-sm my-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -135,7 +135,7 @@ export default function Experience() {
               </svg>
               <p>Part-time [ 05/2019 – 03/2020 ] </p>
             </div>
-            <div class="border-t-2"></div>
+            <div className="border-t-2"></div>
           </div>
         </div>
 

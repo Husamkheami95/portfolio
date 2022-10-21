@@ -40,11 +40,11 @@ export default function Education() {
 
       <div className="h-screen md:flex justify-around m-4 items-center text-4xl mb-4">
        <div className="flex justify-center mb-7">{t("education.degree")}</div> 
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
           <Image src="/certificate.jpg" width="700" height="500" />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{t("education.bacalors")}</div>
-            <p class="text-gray-700 text-base">
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{t("education.bacalors")}</div>
+            <p className="text-gray-700 text-base">
             {t("education.baclorsdescribe")}
             </p>
           </div>
