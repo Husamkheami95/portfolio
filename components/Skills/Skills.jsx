@@ -7,6 +7,7 @@ import {
 } from "../utility/FullStackIcons";
 import Slide from "react-reveal/Slide";
 import { useTranslation } from "next-i18next";
+import Fade from "react-reveal/Fade";
 
 function Skills() {
   const { t } = useTranslation("");
@@ -18,13 +19,13 @@ function Skills() {
       </h1>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-row-2 container mx-auto">
-        <Slide  delay={1000} left>
+        <Fade right duration={2000}>
           <div className="md:mr-20">
             <FrontEndDevelopment />
           </div>
-        </Slide>
-
-        <Slide   delay={1000} right>
+        </Fade>
+         
+        <Fade left duration={2000}>
           <div>
             <h1 className="text-4xl mb-4">{t("home.front")}</h1>
             <div className="ml-5">
@@ -32,18 +33,18 @@ function Skills() {
               <br />⚛ {t("descripe.frontdescribe2")}
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-rows-2  container mx-auto">
         <div className="order-2 ml-5">
-          <Slide delay={1000} left>
+          <Fade left duration={2000}>
             <div className="mr-5 md:mr-20">
               <BackEndWebDevelopment />
             </div>
-          </Slide>
+          </Fade>
         </div>
-        <Slide delay={1000} right>
+        <Fade right duration={2000}>
           <div>
             <h1 className="text-4xl mb-4 order-1">{t("home.backend")}</h1>
             <div>
@@ -51,17 +52,17 @@ function Skills() {
               <br />⚛ {t("descripe.backenddescribe2")}
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-rows-2  container mx-auto">
-        <Slide delay={1000} left>
+        <Fade left duration={2000}>
           <div className="md:mr-20">
             <MobileDevelopment />
           </div>
-        </Slide>
+        </Fade>
 
-        <Slide delay={1000} right>
+        <Fade right duration={2000}>
           <div className="md:mr-20">
             <h1 className="text-4xl mb-4 ">{t("home.mobile")}</h1>
             <div>
@@ -69,19 +70,19 @@ function Skills() {
               <br />⚛ {t("descripe.mobiledescribe2")}
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
 
       <div className="md:h-96 h-screen w-screen grid grid-cols-2 md:grid-rows-2  container mx-auto">
         <div className="order-2 ml-10">
-          <Slide delay={1000} left>
+          <Fade left duration={2000}>
             <div className="mr-5 md:mr-20">
               <Cloud_Infra_Architecture />
             </div>
-          </Slide>
+          </Fade>
         </div>
 
-        <Slide delay={1000} right>
+        <Fade right duration={2000}>
           <div>
             <h1 className="text-4xl mb-4  order-1">{t("home.deploy")}</h1>
             <div>
@@ -89,7 +90,7 @@ function Skills() {
               <br />⚛ {t("descripe.deploydescribe2")}
             </div>
           </div>
-        </Slide>
+        </Fade>
       </div>
     </div>
   );

@@ -23,8 +23,8 @@ function Sidedrawer({rendertheme,langswithch}) {
         </Link>
        
         </div>
-       
-          <Link href='/AboutMe'>
+         <div className="mt-6">
+         <Link href='/AboutMe'>
             <li className="sidedraw-item">{t('nav.aboutme')}</li>
           </Link>
           <Link href="/Education">
@@ -36,6 +36,8 @@ function Sidedrawer({rendertheme,langswithch}) {
           <Link href="/ContactMe">
             <li className="sidedraw-item">{t('nav.contactme')}</li>
           </Link>
+         </div>
+         
         </ul>
         </LightSpeed>
       

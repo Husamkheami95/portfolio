@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import {AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import Button from "../utility/Button";
 import { useTheme } from "next-themes";
 import Sidedrawer from "./Sidedrawer";
@@ -12,9 +12,7 @@ import { useTranslation } from "next-i18next";
 import { useEffect } from "react";
 import LocaleSwitcher from "./locale-switcher";
 
-
 function Navbar() {
-
   const router = useRouter();
 
   const { t } = useTranslation("");
@@ -25,8 +23,6 @@ function Navbar() {
     document.querySelector("html").setAttribute("dir", dir);
     document.querySelector("html").setAttribute("lang", lang);
   }, [router.locale]);
-
-
 
   const { systemTheme, theme, setTheme } = useTheme("dark");
   const [toggle, setToggle] = useState(false);
@@ -39,7 +35,7 @@ function Navbar() {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       return (
-        <Button  onClick={() => setTheme("light")}>
+        <Button onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -78,17 +74,15 @@ function Navbar() {
     }
   };
 
-
-
   return (
-    <div className="p-3" >
+    <div className="p-3">
       <Fade top duration={500} distance="20px">
-        <nav className="flex justify-between px-4 mx-auto">
-          <div className="flex  ml-3">
+        <nav className="container mx-auto flex justify-between gap-15 ">
+          <div className="flex gap-2">
             <Image
               width="40%"
               height="40%"
-               className=" rounded-full"
+              className=" rounded-full"
               src="/myphoto.jpg"
               alt=""
             />
@@ -99,45 +93,46 @@ function Navbar() {
           </div>
           <div>
             <ul className="hidden  md:flex space-x-6 items-center">
-              <Link href='/AboutMe'>
-                <li className="nav-item">{t('nav.aboutme')}</li>
+              <Link href="/AboutMe">
+                <li className="nav-item">{t("nav.aboutme")}</li>
               </Link>
-           
+
               <Link href="/Education">
-                <li className="nav-item">{t('nav.education')}</li>
+                <li className="nav-item">{t("nav.education")}</li>
               </Link>
 
               <Link href="/Experience">
-                <li className="nav-item">{t('nav.experience')}</li>
+                <li className="nav-item">{t("nav.experience")}</li>
               </Link>
 
               <Link href="/ContactMe">
-                <li className="nav-item">{t('nav.contactme')}</li>
+                <li className="nav-item">{t("nav.contactme")}</li>
               </Link>
               <Link href="#">
                 <li className="ml-10  ">{renderThemChanger()}</li>
               </Link>
-                 <Button><LocaleSwitcher/></Button>
-            </ul>
-            
-            <div className="md:hidden ">
-            <Button onClick={()=>handelToggle()}>
-                <div>
-                  <AiOutlineMenu size={25} />
-                </div>
+              <Button>
+                <LocaleSwitcher />
               </Button>
+            </ul>
+          </div>
+          <div className="md:hidden ">
+            <Button onClick={() => handelToggle()}>
+              <div>
+                <AiOutlineMenu size={25} />
               </div>
+            </Button>
           </div>
         </nav>
-     
-        
-            <div className="md:hidden mt-5">
-            {toggle ? <Sidedrawer langswithch={<LocaleSwitcher/>} rendertheme={renderThemChanger()} /> : null}
-            </div>
-            
 
-        
-            
+        <div className="md:hidden mt-5">
+          {toggle ? (
+            <Sidedrawer
+              langswithch={<LocaleSwitcher />}
+              rendertheme={renderThemChanger()}
+            />
+          ) : null}
+        </div>
       </Fade>
     </div>
   );

@@ -26,7 +26,7 @@
  }
  
  .sidedraw-item{
-  @apply hover:bg-gray-400 cursor-pointer block space-y-2  text-sm px-2 py-4   font-semibold
+  @apply hover:bg-fuchsia-800 cursor-pointer block space-y-2  text-sm px-2 py-4   font-semibold
  }
 
  

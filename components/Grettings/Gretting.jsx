@@ -8,7 +8,7 @@ function Gretting() {
 
   return (
     <>
-      <Fade bottom  delay={0} distance="20px">
+      
         <div className="container  p-8  mt-20">
           <header className="mb-16 group ">
             <h1 className="mb-1 font-mono text-2xl  md:text-5xl">
@@ -32,7 +32,7 @@ function Gretting() {
             </Bounce>
           </div>
         </div>
-      </Fade>
+      
     </>
   );
 }
