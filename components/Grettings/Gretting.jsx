@@ -9,7 +9,7 @@ function Gretting() {
   return (
     <>
       
-        <div className="container  p-8  mt-20">
+        <div className="container  m-auto  mt-20">
           <header className="mb-16 group ">
             <h1 className="mb-1 font-mono text-2xl  md:text-5xl">
               {t("home.gretting")} <br className="block md:hidden" />
